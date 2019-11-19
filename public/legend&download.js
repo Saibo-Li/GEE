@@ -15,7 +15,7 @@ var IGBPLc = ModisLc.select('LC_Type1');
 // Force projection of 500 meters/pixel, which is the native MODIS resolution.
 var SCALE = 500;
 //裁剪数据 
-var WulingLc = IGBPLc.map(function(img){
+var LC = IGBPLc.map(function(img){
   img = img.reproject('EPSG:4326', null, SCALE)
   return img.clip(geometry);
 })
@@ -23,7 +23,7 @@ var WulingLc = IGBPLc.map(function(img){
 //===========================展示数据start===========================
 var date_begin = '2001-01-01', // begin time
     date_end   = '2018-12-31';
-var WulingLcTime = WulingLc.filterDate(date_begin,date_end);
+var LCTime = LC.filterDate(date_begin,date_end);
 // 创建裂图例面板
 var legend = ui.Panel({
   style: {
@@ -96,7 +96,7 @@ for (var i = 0; i < names.length; i++) {
     legend.add(makeRow(palette[i], names[i]));
   }
   
-var list = WulingLcTime.toList(1000);
+var list = LCTime.toList(1000);
 var n = list.size().getInfo();
 for (var i=0; i<n; i++){
   var image = ee.Image(list.get(i));
@@ -107,7 +107,7 @@ for (var i=0; i<n; i++){
 Map.add(legend);
 //===========================展示数据end===========================
 //下载数据  
-var list = WulingLc.toList(1000);
+var list = LC.toList(1000);
 var n = list.size().getInfo();
 for (var i=0; i<n; i++){
   var image = ee.Image(list.get(i));
