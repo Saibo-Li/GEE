@@ -1,4 +1,16 @@
-
+var geometry = 
+    /* color: #0b4a8b */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[77.07373046875, 38.84382273520147],
+          [77.07373046875, 35.928922837806645],
+          [82.47900390625, 35.928922837806645],
+          [82.47900390625, 38.84382273520147]]], null, false),
+    sandPer = ee.Image("OpenLandMap/SOL/SOL_SAND-WFRACTION_USDA-3A1A1A_M/v02");
 /**
  * Using landsat8 data, extract indexes and study certain geographical phenomena
  * And because of the lack of necessary data, the script cannot run successfully directly
@@ -64,6 +76,9 @@ var aspect = dem.select("aspect");
 // NDWI
 var NDWI = l8Col.normalizedDifference(["B3", "B5"])
                       .rename("NDWI");
+// NDWIF
+var NDWIF = l8Col.normalizedDifference(["B5", "B6"])
+                      .rename("NDWIF");
 
 //FVC
 /**
@@ -134,9 +149,9 @@ var BSI = l8Col.expression(
 var TGSI = l8Col.expression(
   '(Red-Blue)/(Red+Blue+Green)',
   {
-    Blue:l8Col.select('B1'),
-    Green:l8Col.select('B2'),
-    Red:l8Col.select('B3'),
+    Blue:l8Col.select('B2'),
+    Green:l8Col.select('B3'),
+    Red:l8Col.select('B4'),
   }).rename('TGSI');
 
 // //cloud or snow
@@ -165,14 +180,14 @@ var LST = dataset.select('LST_Day_1km')
 // ];
 
 var bands = [
-  "NDVI","SLOPE", "ELEVATION","ASPECT","NDWI",
+  "NDVI","SLOPE", "ELEVATION","ASPECT","NDWIF",
   "FVC","MSAVI","Albedo","BSI","TGSI","LST"
 ];
 
 var l8ColCart = l8Col.addBands(elevation.rename("ELEVATION"))
                         .addBands(slope.rename("SLOPE"))
                         .addBands(aspect.rename("ASPECT"))
-                        .addBands(NDWI.rename("NDWI"))
+                        .addBands(NDWIF.rename("NDWI"))
                         .addBands(FVC.rename("FVC"))
                         .addBands(MSAVI.rename("MSAVI"))
                         .addBands(Albedo.rename("Albedo"))
@@ -412,19 +427,7 @@ var visParamclassified = {
   max: 5,
   palette: ['ff0200','ff9900','ffff00','80d600','2cab0b']
 };
-var geometry = 
-    /* color: #0b4a8b */
-    /* displayProperties: [
-      {
-        "type": "rectangle"
-      }
-    ] */
-    ee.Geometry.Polygon(
-        [[[77.07373046875, 38.84382273520147],
-          [77.07373046875, 35.928922837806645],
-          [82.47900390625, 35.928922837806645],
-          [82.47900390625, 38.84382273520147]]], null, false),
-    sandPer = ee.Image("OpenLandMap/SOL/SOL_SAND-WFRACTION_USDA-3A1A1A_M/v02");
+
 // Map.addLayer(resultImg, visParamclassified, "resultImg"); 
 // Map.addLayer(l8ColCart,visParamsl8Col,"l8col")
 // Map.addLayer(CloudMask,{},"CloudMask")
