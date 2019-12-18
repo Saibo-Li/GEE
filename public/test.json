@@ -1,5 +1,3 @@
-
-   [
       {
         value: "ee.Image.cat()",
         label: "Image",
@@ -24,4 +22,3 @@
         Returns:"Image",
         Link:'https://jqueryui.com/autocomplete/#custom-data'
       }
-    ]
