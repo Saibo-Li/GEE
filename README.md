@@ -8,15 +8,22 @@ which is not conducive to the public learning and use.
 
 ## GEE_Autocomplete plugin
 
-Functions
+1.Functions
 ---
 ![plugin](https://github.com/Jackli9218/GEE/blob/master/public/img/function.png)<br>
 * **Copy:** copy the selected function, or click filter results to complete the copy<br>
 * **Link:** a demo of this function<br>
 to be continue
 
-Installation
+2.Installation
 ---
+You need chrome and Violentmonkey (firefox is also OK)<br>
+* Install Violentmonkey extension in chrome or firefox
+* Dashboard → New script → paste the script in GEE_Autocomplete → F5 refresh GEE website
+
+3.Updates
+---
+to be continue
 
 GEEAutocomplete.json specification
 ---
