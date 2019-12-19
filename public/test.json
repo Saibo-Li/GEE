@@ -6,6 +6,14 @@
 "Function": "ee.Image.cat(var_args)",
 "Returns":"Image",
 "Link":"https://jqueryui.com/autocomplete/#custom-data"
+},
+  {
+"value": "ee.ImageCollection()",
+"label": "ImageCollection",
+"Arguments":"args (ComputedObject|Image|List<Object>|String):The constructor arguments",
+"Function": "ee.ImageCollection(args)",
+"Returns":"ImageCollection",
+"Link":"https://jqueryui.com/autocomplete/#custom-data"
 }
 ]
 
