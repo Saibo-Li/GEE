@@ -7,11 +7,19 @@ such as the lack of auto-complete command function and the simple interpretation
 which is not conducive to the public learning and use.
 
 ## GEE_Autocomplete plugin
-### Functions
+
+Functions
+---
 ![plugin](https://github.com/Jackli9218/GEE/blob/master/public/img/function.png)<br>
 * **Copy:** copy the selected function, or click filter results to complete the copy<br>
 * **Link:** a demo of this function<br>
-### GEEAutocomplete.json specification
+to be continue
+
+Installation
+---
+
+GEEAutocomplete.json specification
+---
  {
 "label": "ee.Image.cat()",<br>
 "Arguments":"var_args (VarArgs<Image>):The images to be combined",<br>
