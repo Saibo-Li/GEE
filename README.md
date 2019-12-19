@@ -35,5 +35,5 @@ GEEAutocomplete.json specification
 "Link":"https://developers.google.com/earth-engine/image_overview"<br>
 }
   
-## Download plugin
+## GEE Download plugin
 https://raw.githubusercontent.com/kongdd/gee_monkey
