@@ -12,7 +12,8 @@ which is not conducive to the public learning and use.
 ---
 ![plugin](https://github.com/Jackli9218/GEE/blob/master/public/img/function.png)<br>
 * **Copy:** copy the selected function, or click filter results to complete the copy<br>
-* **Link:** a demo of this function<br>
+* **Details:** a  official document of this function<br>
+* **Demo:** a demo of this function<br>
 to be continue
 
 2.Installation
@@ -25,24 +26,16 @@ You need chrome and Violentmonkey (firefox is also OK)<br>
 3.Updates
 ---
 At present, this plug-in is only used for demonstration, <br>
-The majority of GEE users are required to supplement the method information according to the data structure of GEEAutocomplete.json file.<br>
+The majority of GEE users are required to supplement `demo` of the method information according to the data structure of GEEAutocomplete.json file.<br>
 Send it to my email address (742187365@qq.com) or submit it on Github.
 * [GEEAutocomplete.json](https://github.com/Jackli9218/GEE/blob/master/public/GEEAutocomplete.json)<br>
- ` Specification :` <br>
- {<br>
-"label": "function name",<br>
-"Arguments":"parameters required by the function",<br>
-"Function": "function name with parameters",<br>
-"Returns":"return type",<br>
-"Link":"function demo"<br>
-}<br>
  ` GEEAutocomplete.json demo :` <br>
-  {<br>
-"label": "ee.Image.cat()",<br>
-"Arguments":"var_args (VarArgs<Image>):The images to be combined",<br>
-"Function": "ee.Image.cat(var_args)",<br>
-"Returns":"Image",<br>
-"Link":"https://developers.google.com/earth-engine/image_overview"<br>
+ {<br>
+	"label": "ee.Algorithms.CannyEdgeDetector()",<br>
+	"Details": "https://developers.google.com/earth-engine/api_docs#ee.algorithms.cannyedgedetector",<br>
+	"Usage": "ee.Algorithms.CannyEdgeDetector(image, threshold, sigma)",<br>
+	"Returns": "Image",<br>
+	"Link": "https://github.com/Jackli9218/GEE/blob/master/public/GEEAutocomplete.json"<br>
 }<br>
 to be continue<br>
  
@@ -50,6 +43,6 @@ to be continue<br>
 Send email to me ask for GEEAutocomplete.js (742187365@qq.com)
 
 ## GEE Download plugin
-https://raw.githubusercontent.com/kongdd/gee_monkey
+https://github.com/kongdd/gee_monkey
 
 
