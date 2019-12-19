@@ -1,4 +1,4 @@
-[ {
+[{
 	"label": "ee.Algorithms.CannyEdgeDetector()",
 	"Details": "https://developers.google.com/earth-engine/api_docs#ee.algorithms.cannyedgedetector",
 	"Usage": "ee.Algorithms.CannyEdgeDetector(image, threshold, sigma)",
