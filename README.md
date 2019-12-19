@@ -8,7 +8,9 @@ which is not conducive to the public learning and use.
 
 ## GEE_Autocomplete plugin
 ### Functions
-
+![plugin](https://github.com/Jackli9218/GEE/blob/master/public/img/function.png)<br>
+* **Copy:** copy the selected function, or click filter results to complete the copy<br>
+* **Link:** a demo of this function<br>
 ### GEEAutocomplete.json specification
  {
 "label": "ee.Image.cat()",<br>
@@ -19,5 +21,4 @@ which is not conducive to the public learning and use.
 }
   
 ## Download plugin
-
-  https://raw.githubusercontent.com/kongdd/gee_monkey
+https://raw.githubusercontent.com/kongdd/gee_monkey
