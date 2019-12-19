@@ -4445,7 +4445,7 @@
 	"Returns": "Image",
 	"Link": "https://github.com/Jackli9218/GEE/blob/master/public/GEEAutocomplete.json"
 }, {
-	"label": "ee.Image.changeProj()",
+	"label": "ee.Image.changeProj()", 
 	"Details": "https://developers.google.com/earth-engine/api_docs#ee.image.changeproj",
 	"Usage": "Image.Image.changeProjchangeProj(srcProj, dstProj)",
 	"Returns": "Image",
