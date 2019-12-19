@@ -1,6 +1,5 @@
 [
   {
-"value": "ee.Image.cat()",
 "label": "ee.Image.cat()",
 "Arguments":"var_args (VarArgs<Image>):The images to be combined",
 "Function": "ee.Image.cat(var_args)",
@@ -8,7 +7,6 @@
 "Link":"https://developers.google.com/earth-engine/image_overview"
 },
   {
-"value": "ee.ImageCollection()",
 "label": "ee.ImageCollection()",
 "Arguments":"args (ComputedObject|Image|List<Object>|String):The constructor arguments",
 "Function": "ee.ImageCollection(args)",
