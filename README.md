@@ -20,7 +20,7 @@ to be continue
 You need chrome and Violentmonkey (firefox is also OK)<br>
 * Install Violentmonkey extension in chrome or firefox
 * Dashboard → New script → paste the script in GEE_Autocomplete → F5 refresh GEE website
-
+![gif](https://github.com/Jackli9218/GEE/blob/master/public/img/gif.gif)
 3.Updates
 ---
 to be continue
