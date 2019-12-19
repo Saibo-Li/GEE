@@ -4431,7 +4431,7 @@
 	"Details": "https://developers.google.com/earth-engine/api_docs#ee.Image.cat",
 	"Usage": "ee.Image.cat(var_args)",
 	"Returns": "Image",
-	"Link": "https://github.com/Jackli9218/GEE/blob/master/public/GEEAutocomplete.json"
+	"Link": "https://developers.google.com/earth-engine/image_overview"
 }, {
 	"label": "ee.Image.cbrt()",
 	"Details": "https://developers.google.com/earth-engine/api_docs#ee.Image.cbrt",
