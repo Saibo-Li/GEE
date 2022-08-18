@@ -40,7 +40,7 @@ Send it to my email address (742187365@qq.com) or submit it on Github.
 to be continue<br>
  
 ### GEEAutocomplete.js<br>
-[Donate](https://github.com/Jackli9218/GEE/blob/master/public/img/pay.png) first then email to me ask for GEEAutocomplete.js (742187365@qq.com)
+https://www.seibert.cn/GEEAutocomplete.js
 
 ## GEE Download plugin
 https://github.com/kongdd/gee_monkey
